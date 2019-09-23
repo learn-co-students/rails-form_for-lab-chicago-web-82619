@@ -1,0 +1,11 @@
+<h3>New Student Form</h3>
+
+<%= form_for [@school_class, @student] do |t| %>
+  <%= label_tag "First Name" %>
+  <%= t.text_field :first_name %>
+  <br>
+  <%= label_tag "Last Name" %>
+  <%= t.text_field :last_name %>
+  <br>
+  <%= submit_tag "Create School Class" %>
+<% end %>

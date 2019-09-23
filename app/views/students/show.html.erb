@@ -1,0 +1,7 @@
+<h3><%= @student.first_name %></h3>
+<h3><%= @student.last_name %></h3>
+<h3><%= @school_class.title %></h3>
+<h3><%= @school_class.room_number %></h3>
+
+<%= link_to "back", school_class_students_path(@school_class) %>
+<%= link_to "edit student", edit_school_class_student_path(@student) %>
